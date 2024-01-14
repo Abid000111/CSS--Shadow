@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.container {
+	height: 100vh;
+    /* position: relative; */
+	display: flex;
+	flex-flow: column;
+	gap: 55px;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+    position: relative;
+    font-size: 130px;
+    transform: skewX(-7deg);
+}
+
+h1::before {
+    content: "Happy Ending";
+    position: absolute;
+    /* color: rgb(255, 0, 0); */
+    left: -5px;
+    top: -1px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    color: red;
+    z-index: -1;
+    /* transform: ; */
+}
+
+/* h1 span:nth-child(1) {
+    font-size: 90px;
+	transform: skewX(-7deg);
+    position: absolute;
+    left: 34%;
+    top: 20%;
+}
+
+h1 span:nth-child(2) {
+    font-size: 60px;
+    position: absolute;
+    left: 52.5%;
+    top: 32.5%;
+    transform: skewX(7deg);
+} */
+
+
+button {
+	border: none;
+	border-radius: 15px;
+	padding: 10px 20px;
+	background-color: rgb(85, 182, 238);
+	color: rgb(13, 42, 68);
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	box-shadow: 6px 8px 30px 1px black;
+}
+
+button::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(85, 182, 238);
+	z-index: -1;
+	border-radius: 15px;
+	border: none;
+	transition: 0.3s ease;
+}
+
+button:hover::before {
+	transform: scale(1.5);
+	opacity: 0;
+}
+
+button:hover {
+	cursor: pointer;
+}
