@@ -12,7 +12,7 @@ body {
 
 .container {
 	height: 100vh;
-    /* position: relative; */
+	/* position: relative; */
 	display: flex;
 	flex-flow: column;
 	gap: 55px;
@@ -21,22 +21,22 @@ body {
 }
 
 h1 {
-    position: relative;
-    font-size: 130px;
-    transform: skewX(-7deg);
+	position: relative;
+	font-size: 130px;
+	transform: skewX(-7deg);
 }
 
 h1::before {
-    content: "Happy Ending";
-    position: absolute;
-    /* color: rgb(255, 0, 0); */
-    left: -5px;
-    top: -1px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
-    color: red;
-    z-index: -1;
-    /* transform: ; */
+	content: "Happy Ending";
+	position: absolute;
+	/* color: rgb(255, 0, 0); */
+	left: -5px;
+	top: -1px;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: rgb(0, 0, 0);
+	color: red;
+	z-index: -1;
+	/* transform: ; */
 }
 
 /* h1 span:nth-child(1) {
@@ -54,7 +54,6 @@ h1 span:nth-child(2) {
     top: 32.5%;
     transform: skewX(7deg);
 } */
-
 
 button {
 	border: none;
